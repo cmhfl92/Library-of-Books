@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.library {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  margin: 0rem auto;
+  border: 0.1rem solid rgba(0, 0, 0, 0.233);
+  padding: 1rem;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.library-header {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.library-cover-img h2 {
+  color: rgb(37, 36, 36);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.library-cover-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.library-isbn {
+  width: 30%;
+  text-align: left;
+}
+
+.add-to-library {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 30rem;
+  margin: 5rem auto;
+}
+
+.add-to-library-input,
+.library-search {
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0.3rem 0rem;
+}
+
+.add-to-library-btn {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #228b22;
+  font-weight: 700;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
 }
